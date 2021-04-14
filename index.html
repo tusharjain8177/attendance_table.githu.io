@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>App</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/utiles.css" />
+</head>
+
+<body>
+    <div class="today_date" id=""></div>
+    <table>
+        <thead class="table_head">
+            <th>S.No</th>
+            <th>Name</th>
+            <th>KID</th>
+            <th>Attendance</th>
+        </thead>
+        <tbody class="table_body">
+            <tr>
+                <td>1.</td>
+                <td>Name1</td>
+                <td>k-18xxx</td>
+                <td>
+                    <div class="input_checkbox">
+                        <input type="checkbox" name="present" id="checkbox" class="input-assumpte" />
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>2.</td>
+                <td>Name2</td>
+                <td>k-18xxx</td>
+                <td>
+                    <div class="input_checkbox">
+                        <input type="checkbox" name="present" id="checkbox" class="input-assumpte" />
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>3.</td>
+                <td>Name3</td>
+                <td>k-18xxx</td>
+                <td>
+                    <div class="input_checkbox">
+                        <input type="checkbox" name="present" id="checkbox" class="input-assumpte" />
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>4.</td>
+                <td>Name4</td>
+                <td>k-18xxx</td>
+                <td>
+                    <div class="input_checkbox">
+                        <input type="checkbox" name="present" id="checkbox" class="input-assumpte" />
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>5.</td>
+                <td>Name5</td>
+                <td>k-18xxx</td>
+                <td>
+                    <div class="input_checkbox">
+                        <input type="checkbox" name="present" id="checkbox" class="input-assumpte" />
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>Name6</td>
+                <td>k-18xxx</td>
+                <td>
+                    <div class="input_checkbox">
+                        <input type="checkbox" name="present" id="checkbox" class="input-assumpte" />
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>7.</td>
+                <td>Name7</td>
+                <td>k-18xxx</td>
+                <td>
+                    <div class="checkbox">
+                        <input type="checkbox" name="present" id="checkbox" class="input-assumpte" />
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <p id="result">Total present student =</p>
+    <script>
+        showChecked();
+        function showChecked() {
+            document.getElementById("result").textContent =
+                "Total present student = " +
+                document.querySelectorAll("input:checked").length;
+        }
+        document.querySelectorAll("input[name=present]").forEach((i) => {
+            i.onclick = function () {
+                showChecked();
+            };
+        });
+    </script>
+</body>
+
+</html>

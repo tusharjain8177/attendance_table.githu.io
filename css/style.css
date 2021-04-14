@@ -1,0 +1,29 @@
+table {
+  margin-left: 500px;
+  margin-top: 200px;
+  background-color: rgb(122, 124, 223);
+  border: 1px solid black;
+}
+.table_head th {
+  padding: 12px;
+  border: 1px solid black;
+}
+.table_body tr {
+  margin: 10px;
+  padding: 12px;
+  border: 1px solid black;
+}
+
+.table_body tr td {
+  border: 1px solid black;
+}
+
+#result {
+  background-color: rgb(122, 124, 223);
+  max-width: 297px;
+  margin: auto;
+  margin-top: 6px;
+  margin-left: 500px;
+  font-size: 18px;
+  border: 1px solid;
+}
