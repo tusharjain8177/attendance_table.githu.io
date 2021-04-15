@@ -1,4 +1,5 @@
 table {
+  align-items: center;
   margin-left: 500px;
   margin-top: 200px;
   background-color: rgb(122, 124, 223);
@@ -19,11 +20,17 @@ table {
 }
 
 #result {
-  background-color: rgb(122, 124, 223);
-  max-width: 297px;
-  margin: auto;
   margin-top: 6px;
-  margin-left: 500px;
   font-size: 18px;
-  border: 1px solid;
+  text-align: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 1200px) {
+  table {
+    margin-left: 400px;
+  }
+}
+#result{
+  margin-left: 400px;
 }
