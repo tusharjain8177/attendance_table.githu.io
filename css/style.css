@@ -26,11 +26,3 @@ table {
   align-items: center;
 }
 
-@media screen and (max-width: 1200px) {
-  table {
-    margin-left: 400px;
-  }
-}
-#result{
-  margin-left: 400px;
-}

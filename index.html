@@ -91,10 +91,27 @@
             </tr>
         </tbody>
     </table>
+    <input type="button" onclick='selects()' value="Select All" />
+    <input type="button" onclick='deSelect()' value="Deselect All" />
     <p id="result">Total present student =</p>
-    <script>
+    <script type="text/javascript">
+        function selecte() {
+            var ele = document.getElementsByName('present');
+            for (var i = 0; i < ele.length; i++) {
+                if (ele[i] == 'checkbox') {
+                    ele[i].checked = true;
+                }
+            }
+        }
 
-
+        function deSelect(){
+            var ele = document.getElementsByName('present');
+            for(var i=0;i<ele.length;i++){
+                if(ele[i]=='checkbox'){
+                    ele[i].checked=false;
+                }
+            }
+        }
         showChecked();
         function showChecked() {
             document.getElementById("result").textContent =
